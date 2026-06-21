@@ -15,6 +15,7 @@
 
 SemRank is a hybrid offline/online candidate ranking system built for strict hackathon sandbox constraints. The design separates expensive semantic interpretation from the final reproducible ranking step.
 
+```mermaid
 graph TD
     %% Styling
     classDef phaseStyle fill:#f9f9f9,stroke:#333,stroke-width:2px;
@@ -50,6 +51,7 @@ graph TD
     end
     class Phase2 phaseStyle; class F,K fileStyle; class E,G,H,I,J coreStyle;
     style Boundary fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
+```
 
 The offline phase uses Gemini API batch processing to inspect candidate profile summaries, current titles, and career-history descriptions. It extracts compact semantic features such as production ML depth, ranking/evaluation experience, and factual reasoning snippets. These features are saved as a local Parquet artifact and are treated as static input during reproduction.
 
