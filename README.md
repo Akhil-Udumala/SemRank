@@ -15,7 +15,6 @@
 
 SemRank is a hybrid offline/online candidate ranking system built for strict hackathon sandbox constraints. The design separates expensive semantic interpretation from the final reproducible ranking step.
 
-```mermaid
 graph TD
     %% Styling
     classDef phaseStyle fill:#f9f9f9,stroke:#333,stroke-width:2px;
